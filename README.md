@@ -48,19 +48,19 @@ cd build/bin/
 
 3. 重新进行编译
 
-### 二、文档目录：
 
-| 名称  | 简介       | 地址|
-|:---:|:----: |:---: |
-| Huggingface_ggml介绍 | 关于ggml基础概念于demo介绍|[Link](https://huggingface.co/blog/introduction-to-ggml)|
-| GGML 核心概念 | 关于ggml核心概念解析|[Link](./doc/Core-Concepts.md)|
-| ... | -     |-      |
-
-
-### 三、demo目录：
+### 二、demo目录：
 
 | 名称  | 简介       | 地址|
 |:---:|:----: |:---: |
 | 1. sgemm | 关于经典矩阵乘法的ggml实现|[Link](./demo/demo-sgemm/README.md)|
 | ... | -     |-      |
 
+### 三、文档目录：
+
+| 名称  | 简介       | 地址|
+|:---:|:----: |:---: |
+| Huggingface_ggml介绍 | 关于ggml基础概念于demo介绍|[Link](https://huggingface.co/blog/introduction-to-ggml)|
+| GGML 核心概念 | 关于ggml核心概念解析|[Link](./doc/Core-Concepts.md)|
+| Mnist手写数字识别demo | 关于ggml/examples/mnist手写数字识别demo源码流程思维导图|[Link](https://n02lxruxa4.feishu.cn/wiki/HPGjwT7FAiyZttkNCErcl7lXnKg?from=from_copylink)|
+| ... | -     |-      |
