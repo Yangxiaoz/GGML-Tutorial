@@ -7,6 +7,7 @@
 SGEMM（Single-Precision General Matrix Multiply）是 BLAS（Basic Linear Algebra Subprograms）库中的一个常用函数，执行单精度矩阵乘法。常被当作矩阵优化测试样例。
 
 在本例中样例为：
+
 $$
 C = A\times B + C
 $$
@@ -42,11 +43,11 @@ $$
 
 
 $$
-mul\_mat(A, B^T) = C^T
+ggml\\_mul\\_mat(A, B^T) = C^T
 $$
 
 $$
-ggml\_mul\_mat(
+ggml\\_mul\\_mat(
 \begin{bmatrix}
 2 & 8 \\
 5 & 1 \\
