@@ -33,7 +33,11 @@ cmake --build build -j 12 #cuda编译较慢，尽可能选择更多core进行编
 可执行文件生成于“/build/bin/”文件下
 ```bash
 cd build/bin/
+（仅CPU）
 ./simple-sgemm
+
+(启用CUDA)
+./simple-sgemm CUDA0/CPU  #可手动输入参数选择，未输入参数时默认使用第一个后端
 ```
 
 ### 添加其他demo
@@ -48,7 +52,8 @@ cd build/bin/
 
 | 名称  | 简介       | 地址|
 |:---:|:----: |:---: |
-| - | -|-|
+| Huggingface_ggml介绍 | 关于ggml基础概念于demo介绍|[Link](https://huggingface.co/blog/introduction-to-ggml)|
+| GGML 核心概念 | 关于ggml核心概念解析|[Link](./doc/Core-Concepts.md)|
 | ... | -     |-      |
 
 

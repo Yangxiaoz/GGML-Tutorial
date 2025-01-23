@@ -8,7 +8,7 @@ SGEMM（Single-Precision General Matrix Multiply）是 BLAS（Basic Linear Algeb
 
 在本例中样例为：
 $$
-C = A \times B + C
+C = A\times B + C
 $$
 
 $$
@@ -42,7 +42,7 @@ $$
 
 
 $$
-ggml\_mul\_mat(A, B^T) = C^T
+mul\_mat(A, B^T) = C^T
 $$
 
 $$
@@ -67,9 +67,6 @@ ggml\_mul\_mat(
 42 & 29 & 28 & 64 \\
 \end{bmatrix}
 $$
-
-
-The `simple-ctx` doesn't support gpu acceleration. `simple-backend` demonstrates how to use other backends like CUDA and Metal.
 
 ## 关于源码
 
