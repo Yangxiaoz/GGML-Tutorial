@@ -17,5 +17,6 @@ ggml_add_compile_flags()
 #add demos:
 
 add_subdirectory(demo-sgemm)
+add_subdirectory(demo-split_graph)
 
 
