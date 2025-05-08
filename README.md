@@ -53,7 +53,8 @@ cd build/bin/
 
 | 名称  | 简介       | 地址|
 |:---:|:----: |:---: |
-| 1. sgemm | 关于经典矩阵乘法的ggml实现|[Link](./demo/demo-sgemm/README.md)|
+| 1. sgemm | 关于经典矩阵乘法的ggml实现|[Link](./src/demo-sgemm/)|
+| 2. split_graph | 关于多后端计算图分割示例代码|[Link](./src/demo-split_graph/)|
 | ... | -     |-      |
 
 ### 三、文档目录：

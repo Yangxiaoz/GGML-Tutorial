@@ -107,7 +107,7 @@ get_target_property(GGML_LINK_LIBRARIES ggml LINK_LIBRARIES)
 #
 
 add_subdirectory(src)
-add_subdirectory(demo)
+
 
 
 
