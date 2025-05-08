@@ -1,0 +1,25 @@
+{
+    "version": 4,
+    "configurePresets": [
+        {
+            "name":  "linux-base",
+            "hidden": true,
+            "generator":   "Unix Makefiles",
+            "binaryDir":   "${sourceDir}/build-${presetName}",
+            "cacheVariables": {
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+                "CMAKE_INSTALL_RPATH": "$ORIGIN;$ORIGIN/..",
+                "CMAKE_BUILD_PARALLEL_LEVEL": "14",
+                "GGML_CCACHE": "ON"
+            }
+        },
+        { "name": "debug",    "hidden": true, "cacheVariables": { "CMAKE_BUILD_TYPE": "Debug" } },
+        { "name": "release",  "hidden": true, "cacheVariables": { "CMAKE_BUILD_TYPE": "Release" } },
+
+        { "name": "cuda",  "hidden": true, "cacheVariables": { "GGML_CUDA": "ON","CMAKE_CUDA_COMPILER": "/usr/local/cuda-12.2/bin/nvcc" } },
+
+        { "name": "CPU-debug", "inherits": [ "linux-base","debug"] },
+        { "name": "GPU-debug", "inherits": [ "linux-base","debug","cuda"] }
+    ]
+}
+
