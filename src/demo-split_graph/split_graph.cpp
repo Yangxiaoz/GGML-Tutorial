@@ -28,16 +28,12 @@
 #define Flag_CPU_Parallel       1  // 1: leveraging multi-cores for computing when benckend is cpu
 
 
-
-
 static void ggml_log_callback_default(ggml_log_level level, const char * text, void * user_data) {
     (void) level;
     (void) user_data;
     fputs(text, stderr);
     fflush(stderr);
 }
-
-
 
 
 int main(int argc, char ** argv) {
