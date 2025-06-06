@@ -11,6 +11,10 @@ GGML机器学习库学习指南与代码示例
 ```bash
 git clone https://github.com/Yangxiaoz/GGML-Tutorial.git
 cd GGML-Tutorial
+
+#init ggml submodule
+git submodule init
+git submodule update
 ```
 
 2. CPU Build
