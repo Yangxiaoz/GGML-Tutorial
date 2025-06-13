@@ -13,24 +13,28 @@ C = A\times B + C
 $$
 
 $$
-\begin{bmatrix}
+A =\begin{bmatrix}
 2 & 8 \\
 5 & 1 \\
 4 & 2 \\
 8 & 6 \\
 \end{bmatrix}
-\times
+,
+B=
+
 \begin{bmatrix}
 10 & 9 & 5 \\
 5 & 9 & 4 \\
 \end{bmatrix}
-+
+C=
 \begin{bmatrix}
 1 & 1 & 1 & 1 \\
 1 & 1 & 1 & 1 \\
 1 & 1 & 1 & 1 \\
 \end{bmatrix}
-\=
+$$
+$$
+res=
 \begin{bmatrix}
 61 & 56 & 51 & 111 \\
 91 & 55 & 55 & 127\\
@@ -38,16 +42,15 @@ $$
 \end{bmatrix}
 $$
 
-
 值得注意的是在 `ggml` 中，我们以转置形式传递矩阵 $B$，然后逐行相乘。结果 $C$ 也是转置的，如下所示：
 
 
 $$
-ggml\\_mul\\_mat(A, B^T) = C^T
+mulmat(A, B^T) = C^T
 $$
 
 $$
-ggml\\_mul\\_mat(
+mulmat_(
 \begin{bmatrix}
 2 & 8 \\
 5 & 1 \\
@@ -61,7 +64,7 @@ ggml\\_mul\\_mat(
 5 & 4 \\
 \end{bmatrix}
 )
-\=
+=
 \begin{bmatrix}
 60 & 55 & 50 & 110 \\
 90 & 54 & 54 & 126 \\
